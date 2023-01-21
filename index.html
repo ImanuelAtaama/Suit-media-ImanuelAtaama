@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Slick Banner</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Our CSS -->
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            /* background: #dedede; */
+        }
+
+        .container {
+            max-width: 100%;
+            /* padding: 15px; */
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slider .slick-slide {
+            border: solid 1px #000;
+        }
+
+        .slider .slick-slide img {
+            width: 100%;
+        }
+
+        /* make button larger and change their positions */
+        .slick-prev, .slick-next {
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+        }
+        .slick-prev {
+            left: 5px;
+        }
+        .slick-next {
+            right: 5px;
+        }
+        .slick-prev:before, 
+        .slick-next:before {
+            font-size: 40px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+        /* move dotted nav position */
+        .slick-dots {
+            bottom: 15px;
+        }
+        /* enlarge dots and change their colors */
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 1;
+        }
+        .slick-dots li.slick-active button:before {
+            color: #dedede;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="company">Company</div>
+        <div class="navbar">
+            <div class="about">
+                <button class="aboutbtn">ABOUT 
+                    <!-- <i class="fa fa-caret-down"></i> -->
+                </button>
+                <div class="about-content">
+                    <a href="#">HISTORY</a>
+                    <a href="#">VISION MISSION</a>
+                </div>
+            </div> 
+            <a href="#ourwork">OUR WORK</a>
+            <a href="#ourteam">OUR TEAM</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="slider">
+                    <div class="container">
+                            <div class="pembungkus">
+                                <img src="src/bg.jpg">
+                                <div class="wrap">
+                                    <h2>THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY</h2>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <div class="pembungkus">
+                            <img src="src/about-bg.jpg">
+                            <div class="wrap">
+                                <h2>WE DON'T HAVE THE BEST BUT WE HAVE THE GRATEST TEAM</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <h1>OUR VALUE</h1>
+            <div class="wrap-grid">
+                <div class="shape">
+                    <div class="talkbuble1">
+                        <div>
+                            <img class="logo1" src="/src/lightbulb-o.png" alt="">
+                            <h3>INNOVATIVE</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore totam laborum temporibus incidunt, accusantium ipsum vel?</p>
+                        </div>
+                    </div>
+                    <div class="talkbuble2">
+                        <div>
+                            <img class="logo2" src="src/bank.png" alt="">
+                            <h3>LOYALTY</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.minima a unde iure natus fuga minus aliquam quo officiis quidem autem magni.</p>
+                        </div>
+                    </div>
+                    <div class="kotak">
+                        <div>
+                            <img class="logo3" src="src/balance-scale.png" alt="">
+                            <h3>RESPECT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam obcaecati nesciunt illo dicta expedita. Nemo est reiciendis suscipit perferendis.</p>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <h1>CONTACT US</h1>
+            <div class="form-container">
+                <form onsubmit="return validateForm()" id="myForm">
+                    <label for="nama">Nama:</label>
+                    <br>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <p id="error-1"></p>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="text" id="email" placeholder="Enter your email">
+                    <p id="error-2"></p>
+                    <label for="pesan">Pesan:</label>
+                    <br>
+                    <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                    <p id="error-3"></p>
+                    <input type="submit" value="SUBMIT">
+            </form>
+        </section>
+    </main>
+    <footer class="card-foot">
+        <div class="owner">
+            <div class="copyright">Copyright @ 2016. PT Company</div>
+            <div class="media">
+                <img class="sosmed" src="src/facebook-official.png" alt="">
+                <img class="sosmed" src="src/twitter (1).png" alt="">
+            </div>
+            
+    </footer>
+    <!-- <footer>
+        <div class="owner">
+            <div class="copyright">Copyright @ 2016. PT Company</div>
+            <div>
+                <div>
+                    <img src="src/facebook-official.png" alt="">
+                    <img src="src/twitter (1).png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+         -->
+
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Slick JS -->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Our Script -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2500,
+            dots: true
+            });
+        });
+    </script>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var pesan = document.getElementById("pesan").value;
+            var error1 = document.getElementById("error-1");
+            var error2 = document.getElementById("error-2");
+            var error3 = document.getElementById("error-3");
+
+            if(name == ""){
+                document.getElementById("name").style.borderColor = "red";
+                error1.innerHTML = "This field is required";
+            }else if(name != ""){
+                document.getElementById("name").style.borderColor = "black";}
+                // error1.innerHTML = "";
+            if(email == "" && email.indexOf("@")==-1 && email.indexOf(".")==-1){
+                document.getElementById("email").style.borderColor = "red";
+                error2.innerHTML = "invalid email address";
+            } else if(email != "" && email.indexOf("@")!=-1 && email.indexOf(".")!=-1){
+                document.getElementById("email").style.borderColor = "black";
+                error2.innerHTML = "";
+            }
+            if(pesan == ""){
+                document.getElementById("pesan").style.borderColor = "red";
+                error3.innerHTML = "This field is required";
+            }else if(pesan != ""){
+                document.getElementById("pesan").style.borderColor = "black";
+                error3.innerHTML = "";
+            }
+    
+        return true;
+        }
+    </script>
+
+</body>
+</html>
